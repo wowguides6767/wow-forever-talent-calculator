@@ -1,18 +1,10 @@
-import { withBasePath } from "@/lib/basePath";
-
-const mageHref = withBasePath("/mage/");
-
 export default function Home() {
   return (
-    <>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `location.replace(${JSON.stringify(mageHref)});`,
-        }}
-      />
+    <div style={{ padding: "20px" }}>
+      <h1>WoW Forever Talent Calculator</h1>
       <p>
-        <a href={mageHref}>Open the Mage talent calculator</a>
+        <a href="/mage/">Open the Mage Talent Calculator</a>
       </p>
-    </>
+    </div>
   );
 }
